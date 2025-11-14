@@ -5,21 +5,28 @@
 </head>
 <body style="font-family: Arial; margin: 0; background-color: #f4f4f4; color: #333;">
 
-  <!-- Header -->
- <header style="background-color: #000000; color: white; padding: 20px; text-align: center;">
-
-    <h2>STARZ University</h2>
-    <nav>
-      <a href="Myindex.html" style=" position: center; background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">Home</a>
-      <a href="Myabout.html" style="background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">About</a>
-      <a href="Myfavorites.html" style="background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">Favorites</a>
-      <a href="Myportfolio.html" style="background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">Portfolio</a>
+<header style="background-color: #000; color: white; padding: 15px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+    
+    <!-- Logo -->
+    <div>
       
-      <a href="Mycontact.html"
-      style="background-color: white; color: goldenrod; padding:7px 18px; text-decoration: none; border-radius: 4px;">Contact</a>
+      <img src="Logo.jpg" alt="STARZ Logo" style="width:50px; height:50px; object-fit: contain; border-radius:5px;">
+        <h2 style="margin: 0; font-size: 24px;">STARZ University</h2>
+        
+    </div>
+
+    <!-- Navigation -->
+    <nav style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+      <a href="Myindex.html" style="background-color:white; color:goldenrod; padding:6px 12px; text-decoration:none; border-radius:4px;">Home</a>
+      <a href="Myabout.html" style="background-color:white; color:goldenrod; padding:6px 12px; text-decoration:none; border-radius:4px;">About</a>
+      <a href="Myfavorites.html" style="background-color:white; color:goldenrod; padding:6px 12px; text-decoration:none; border-radius:4px;">Favorites</a>
+      <a href="Myportfolio.html" style="background-color:white; color:goldenrod; padding:6px 12px; text-decoration:none; border-radius:4px;">Portfolio</a>
+      <a href="Mycontact.html" style="background-color:white; color:goldenrod; padding:6px 12px; text-decoration:none; border-radius:4px;">Contact</a>
     </nav>
-  </header>
-  
+
+  </div>
+</header>  
 <!-- Background Wrapper -->
 
 <div style="
@@ -36,34 +43,66 @@
     <a href="Mycontact.html" style="background-color: white; color: goldenrod; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Learn More</a>
   </section>
 
-  <!-- About Me Section -->
-  <section style="display: flex; padding: 30px; background-color: rgba(255,255,255,0.8);">
-    <div style="flex: 1;">
-      <h3>About Me</h3>
-      <p>I’m a computer and IT student with skills in Microsoft Office, QuickBooks, and website design. I love creating digital solutions that make work easier.</p>
-    </div>
-    <div style="flex: 1; text-align: center;">
-      <img src="https://via.placeholder.com/250" alt="Nathaniel" style="border-radius: 10px;">
-    </div>
-  </section>
+<!-- About Me Section -->
+<section style="padding: 30px; background-color: rgba(255,255,255,0.8);">
 
-  <!-- Portfolio Section -->
-  <section style="padding: 30px; background-color: rgba(255,255,255,0.9);">
-    <h3 style="text-align: center;">My Projects</h3>
-    <div style="display: flex; justify-content: space-around;">
-      <div style="background: white; padding: 10px; width: 30%; border-radius: 10px;">
-        <h4>High School Accounting System</h4>
-        <p>A simple system to help schools manage student accounts and finances.</p>
-      </div>
-      <div style="background: white; padding: 10px; width: 30%; border-radius: 10px;">
-        <h4>Personal Website</h4>
-        <p>This portfolio website built with basic HTML and inline CSS.</p>
-      </div>
-      <div style="background: white; padding: 10px; width: 30%; border-radius: 10px;">
-        <h4>Excel Data Tracker</h4>
-        <p>A spreadsheet for tracking expenses and income efficiently.</p>
-      </div>
+  <div id="about" style="text-align: center; max-width: 700px; margin: auto;">
+
+    <img src="Nathaniel.JPG" 
+         alt="Nathaniel"
+         style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+
+    <h3> About Me </h3>
+
+  <p>
+  I am a dedicated computer and IT student with strong skills in Microsoft Office, QuickBooks, 
+  and basic web design using HTML and CSS. I enjoy using technology to solve real-life problems, 
+  especially in areas like school management, data organization, and digital productivity.
+<br><br>
+  <a href="Myabout.html" style="background-color: white; color: goldenrod; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Read More</a>
+</p>
+
+  </div>
+
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" style="padding: 40px 20px; background-color: #f9f9f9;">
+  <h2 style="text-align: center; margin-bottom: 30px;">MY PROJECTS</h2>
+
+  <div style="
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    max-width: 900px; 
+    margin: auto;">
+
+    <!-- Portfolio Item 1 -->
+    <div style="background: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="Schoolproject.jpg" alt="Project 1" style="width: 100%; border-radius: 10px;">
+      <h4 style="margin-top: 10px;">School Project</h4>
     </div>
+
+    <!-- Portfolio Item 2 -->
+    <div style="background: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="website.jpg" alt="Project 2" style="width: 100%; border-radius: 10px;">
+      <h4 style="margin-top: 10px;">Website Design</h4>
+    </div>
+
+    <!-- Portfolio Item 3 -->
+    <div style="background: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="exceldata.jpg" alt="Project 3" style="width: 100%; border-radius: 10px;">
+      <h4 style="margin-top: 10px;">Excel Tracker</h4>
+    </div>
+
+    <!-- Portfolio Item 4 -->
+    <div style="background: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); text-align: center;">
+      <img src="QuickBooks.jpg" alt="Project 4" style="width: 100%; border-radius: 10px;">
+      <h4 style="margin-top: 10px;">QuickBooks Work</h4>
+    </div>
+
+  </div>
+</section>
   </section>
 
   <!-- Newsletter Section -->

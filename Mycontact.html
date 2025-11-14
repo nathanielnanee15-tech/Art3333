@@ -7,9 +7,18 @@
 <body style="font-family: Arial; margin: 0; background-color: #f4f4f4; color: #333;">
 
   <!-- Header -->
-  <header style="background-color: #000000; color: white; padding: 20px; text-align: center;">
-    <h1>My Personal Contact</h1>
-    <nav>
+ <header style="background-color: #000; color: white; padding: 15px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+    
+    <!-- Logo -->
+    <div>
+      
+      <img src="Logo.jpg" alt="STARZ Logo" style="width:50px; height:50px; object-fit: contain; border-radius:5px;">
+        <h2 style="margin: 0; font-size: 24px;">STARZ University</h2>
+        
+    </div>
+        <!-- Navigation -->
+    <nav style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
            <a href="Myindex.html" style=" position: center; background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">Home</a>
       <a href="Myabout.html" style="background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">About</a>
       <a href="Myfavorites.html" style="background-color: white; color: goldenrod; padding: 6px 16px; text-decoration: none; border-radius: 4px;">Favorites</a>
@@ -17,45 +26,76 @@
     </nav>
   </header>
 
-  <!-- Page Title -->
-  <section style="background-color: goldenrod; color: white; padding: 40px; text-align: center;">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out to me for projects, collaborations, or just to say hello!</p>
-  </section>
+<!-- Contact Section -->
+<section style="padding: 50px 20px; background-color: #f9f9f9;">
+  <div style="max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px;">
 
-  <!-- Contact Section -->
-  <section style="padding: 40px; background-color: white; display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <!-- Left Side: Map + Social Media -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="margin-bottom: 20px;">Our Location</h3>
 
-    <!-- Contact Info -->
-    <div style="width: 40%; background-color: #ecf0f1; padding: 20px; border-radius: 10px;">
-      <h3>My Contact Information</h3>
-      <p><strong>Full Name:</strong> Nathaniel Nanee</p>
-      <p><strong>Email:</strong> <a href="mailto:nathanielnanee15@gmail.com">nathanielnanee15@gmail.com</a></p>
-      <p><strong>Phone:</strong> 0777115844</p>
-      <p><strong>Location:</strong> Liberia</p>
-      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/bn.n.raw" style="color: goldenrod;">FACEBOOK</a></p>
-      <p><strong>WhatsApp#:</strong> <a href="https://wa.me/231777115844" style="color: goldenrod;">WHATSAPP </a></p>
+      <!-- Google Map Embed -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.123456!2d-10.780!3d6.310!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf0a03561ca2c517%3A0xe0b703638d4b9ee2!2sStarz%20University!5e0!3m2!1sen!2slr!4v1699999999999!5m2!1sen!2slr"
+        width="100%" height="350" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy">
+      </iframe>
+
+      <!-- Social Media Handles Under Map -->
+      <div style="margin-top: 20px; display: flex; justify-content: flex-start; gap: 15px;">
+       <a href=" https://www.facebook.com/bn.n.raw" target="_blank" style="background-color: blue; color: White; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Facebook</a>
+        <a href="https://wa.me/231777115844" target="_blank"  style="background-color: Green; color: White; padding: 10px 20px; text-decoration: none; border-radius: 5px;">WhatsApp</a>
+        <a href="https://www.instagram.com/bn.n.raw?igsh=MWdtYnE4NHlyYXk3cg==" target="_blank" style="background-color: deeppink; color: White; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Instagram</a>
+       </div>
     </div>
 
-    <!-- Contact Form -->
-    <div style="width: 50%; background-color: #ecf0f1; padding: 20px; border-radius: 10px;">
-      <h3>Send Me a Message</h3>
-      <form action="#" method="post">
-        <label for="name"><strong>Name:</strong></label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
-
-        <label for="email"><strong>Email:</strong></label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
-
-        <label for="message"><strong>Message:</strong></label><br>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea><br>
-
-        <input type="submit" value="Send Message" style="background-color:
-        goldenrod; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    <!-- Right Side: Contact Form -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="margin-bottom: 20px;">Contact Us</h3>
+      <form>
+        <div style="margin-bottom: 15px;">
+          <label for="name" style="display:block; margin-bottom:5px;">Name</label>
+          <input type="text" id="name" placeholder="Your full name" style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="email" style="display:block; margin-bottom:5px;">Email</label>
+          <input type="email" id="email" placeholder="Your email address" style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc;">
+        </div>
+        <div style="margin-bottom: 15px;">
+          <label for="message" style="display:block; margin-bottom:5px;">Message</label>
+          <textarea id="message" placeholder="Write your message" style="width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; height:120px;"></textarea>
+        </div>
+        <button type="submit" style="background-color: goldenrod; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Send Message</button>
       </form>
     </div>
 
-  </section>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section style="padding: 50px 20px; background-color: whitesmoke;">
+  <div style="max-width: 800px; margin: auto;">
+    <h3 style="margin-bottom: 30px; text-align:center;">Frequently Asked Questions</h3>
+
+    <!-- FAQ 1 -->
+    <div style="margin-bottom: 20px;">
+      <h4 style="margin-bottom:5px;">Q1: How can I contact STARZ University?</h4>
+      <p>A1: You can use the contact form above or email us at @ nathanielnanee15@gmail.com.com.</p>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div style="margin-bottom: 20px;">
+      <h4 style="margin-bottom:5px;">Q2: Where is Our Office located?</h4>
+      <p>A2: Our main office is located in [Paynesville City, Monrovia Liberia]. Check the Google Map on this page for directions.</p>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div style="margin-bottom: 20px;">
+      <h4 style="margin-bottom:5px;">Q3: What courses do you offer?</h4>
+      <p>A3: We offer ICT, web development, and other digital technology programs for students at all levels.</p>
+    </div>
+    
+  
+</section>
 
   <!-- Footer -->
   <footer style="background-color: #000000; color: white; text-align: center; padding: 10px;">
